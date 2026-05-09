@@ -10,7 +10,14 @@
 <meta property="og:type" content="website"/>
 <link rel="preload" as="image" href="assets/hero-receptionist-BDVfGCCQ.jpg"/>
 <link rel="stylesheet" href="assets/styles-Yho-dyp2.css"/>
-<style>html{scroll-behavior:smooth}</style>
+<style>
+html{scroll-behavior:smooth}
+:root{--surface:#ffffff;--background:#ffffff}
+.faq-row{border-bottom:1.5px dotted rgba(0,0,0,.18)}
+.faq-row:first-child{border-top:1.5px dotted rgba(0,0,0,.18)}
+.faq-grid{display:grid;grid-template-columns:1fr;gap:2.5rem}
+@media (min-width:768px){.faq-grid{grid-template-columns:5fr 7fr;gap:4rem}}
+</style>
 </head>
 <body>
 <div class="min-h-screen bg-surface">
@@ -39,23 +46,23 @@
 <!-- HERO -->
 <section class="relative">
   <div class="max-w-6xl mx-auto px-4 md:px-6">
-    <div class="py-20 md:py-28 lg:py-32 text-center">
+    <div class="text-center" style="padding-top:8rem;padding-bottom:5rem">
       <div class="inline-flex items-center gap-2 rounded-full bg-card shadow-card px-3 py-1 text-xs text-muted-foreground">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path></svg>
         Powered by Retell's enterprise voice platform
       </div>
-      <h1 class="mt-6 font-heading font-light tracking-[-0.03em] leading-[1.02] text-5xl md:text-7xl lg:text-[5.5rem] text-balance">Never miss a booking<br/>again.</h1>
-      <p class="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto text-balance">Stand up an AI receptionist in five minutes. Free to start with $10 in credit — no annual contract, no sales demo. Answers every call, books on your calendar, routes the ones your team needs to take. 24/7, in 55+ languages.</p>
-      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+      <h1 class="mt-5 font-heading font-light tracking-[-0.03em] leading-[1.02] text-4xl md:text-5xl lg:text-6xl text-balance">Never miss a booking again.</h1>
+      <p class="mt-4 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto text-balance">Stand up an AI receptionist in five minutes. Free to start with $10 in credit — no annual contract, no sales demo. Answers every call, books on your calendar, routes the ones your team needs to take. 24/7, in 55+ languages.</p>
+      <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
         <a href="#cta" class="inline-flex items-center justify-center rounded-full text-sm font-medium px-7 py-3 bg-accent text-accent-foreground hover:bg-foreground">Start free — $10 credit</a>
         <a href="#platform" class="inline-flex items-center justify-center rounded-full text-sm font-medium px-5 py-3 bg-card text-foreground shadow-card hover:bg-secondary">See how it works
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1.5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
         </a>
       </div>
-      <p class="mt-6 text-sm text-muted-foreground">$10 free credit · No card required · Cancel anytime · HIPAA &amp; SOC 2</p>
+      <p class="mt-4 text-sm text-muted-foreground">$10 free credit · No card required · Cancel anytime · HIPAA &amp; SOC 2</p>
     </div>
 
-    <div class="relative pb-10 md:pb-16">
+    <div class="relative pb-8 md:pb-12">
       <div class="relative aspect-video w-full rounded-3xl overflow-hidden bg-foreground shadow-card">
         <img src="assets/hero-receptionist-BDVfGCCQ.jpg" alt="Retell Receptionist product preview" class="absolute inset-0 w-full h-full object-cover" width="1536" height="1024"/>
         <a href="#cta" class="absolute bottom-5 left-5 md:bottom-6 md:left-6 inline-flex items-center gap-2 rounded-full bg-background/15 backdrop-blur-md text-primary-foreground px-4 py-2 text-sm font-medium hover:bg-background/25 transition">
@@ -156,63 +163,72 @@
 
 <!-- BUILT TO HANDLE EVERY CALL -->
 <section id="features" class="max-w-6xl mx-auto px-4 md:px-6 pb-24 md:pb-32">
-  <div class="max-w-2xl mb-10 md:mb-14">
+  <div class="faq-grid mb-10 md:mb-14 items-end">
     <h2 class="font-heading font-light tracking-[-0.02em] leading-[1.05] text-4xl md:text-5xl">A receptionist that never clocks out.</h2>
-    <p class="mt-4 text-muted-foreground">Reception works the way your business already does — alongside your team, your tools, and the stack you already run.</p>
+    <p class="text-muted-foreground">Reception works the way your business already does — alongside your team, your tools, and the stack you already run.</p>
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-    <article class="rounded-3xl bg-card shadow-card overflow-hidden flex flex-col">
-      <div class="relative aspect-square overflow-hidden">
+    <article class="flex flex-col">
+      <div class="relative aspect-square overflow-hidden rounded-3xl bg-card">
         <img src="assets/feature-calendar-zUFU2G-j.jpg" alt="Books the appointment before the call ends" loading="lazy" width="1024" height="1024" class="absolute inset-0 w-full h-full object-cover"/>
       </div>
-      <div class="p-6 md:p-7">
-        <span class="grid h-8 w-8 place-items-center rounded-full bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg></span>
-        <h3 class="mt-4 font-heading text-xl tracking-tight">Books the appointment before the call ends</h3>
+      <div class="pt-5">
+        <h3 class="font-heading text-xl tracking-tight">Books the appointment before the call ends</h3>
         <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Native Cal.com booking — checks availability, holds the slot, sends the SMS confirmation. Sync to Google Calendar, Outlook, or anything else through Make, Zapier, or n8n.</p>
       </div>
     </article>
 
-    <article class="rounded-3xl bg-card shadow-card overflow-hidden flex flex-col">
-      <div class="relative aspect-square overflow-hidden">
+    <article class="flex flex-col">
+      <div class="relative aspect-square overflow-hidden rounded-3xl bg-card">
         <img src="assets/feature-team-DHdvWBLG.jpg" alt="Your team first, AI as backup" loading="lazy" width="1024" height="1024" class="absolute inset-0 w-full h-full object-cover"/>
       </div>
-      <div class="p-6 md:p-7">
-        <span class="grid h-8 w-8 place-items-center rounded-full bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg></span>
-        <h3 class="mt-4 font-heading text-xl tracking-tight">Your team first, AI as backup</h3>
+      <div class="pt-5">
+        <h3 class="font-heading text-xl tracking-tight">Your team first, AI as backup</h3>
         <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Set hours when calls go to your staff. If no one picks up or it's after hours, Reception steps in — warm-transfer to whichever person you've configured when escalation is needed.</p>
       </div>
     </article>
 
-    <article class="rounded-3xl bg-card shadow-card overflow-hidden flex flex-col">
-      <div class="relative aspect-square overflow-hidden">
+    <article class="flex flex-col">
+      <div class="relative aspect-square overflow-hidden rounded-3xl bg-card">
         <img src="assets/feature-languages-DrP3Ru5M.jpg" alt="One agent, 55+ languages" loading="lazy" width="1024" height="1024" class="absolute inset-0 w-full h-full object-cover"/>
       </div>
-      <div class="p-6 md:p-7">
-        <span class="grid h-8 w-8 place-items-center rounded-full bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg></span>
-        <h3 class="mt-4 font-heading text-xl tracking-tight">One agent. 55+ languages.</h3>
+      <div class="pt-5">
+        <h3 class="font-heading text-xl tracking-tight">One agent. 55+ languages.</h3>
         <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Configure one multilingual agent across all 55 languages and 64 locale variants — not 55 different agents. Most platforms in this category make you build a separate agent per language; Retell doesn't.</p>
       </div>
     </article>
   </div>
 
-  <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-    <div class="rounded-3xl bg-card shadow-card p-6 md:p-7 relative">
-      <span class="absolute top-5 right-5 text-[10px] font-bold tracking-wider text-accent bg-secondary px-2 py-0.5 rounded-full uppercase">Retell only</span>
-      <span class="grid h-9 w-9 place-items-center rounded-full bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></span>
-      <h3 class="mt-5 font-heading text-xl tracking-tight">Press-to-confirm, built in</h3>
-      <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Insurance ID, account number, appointment code. Callers can press numbers or just talk — one agent handles both. Most platforms in this category can't do it.</p>
-    </div>
-    <div class="rounded-3xl bg-card shadow-card p-6 md:p-7">
-      <span class="grid h-9 w-9 place-items-center rounded-full bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></span>
-      <h3 class="mt-5 font-heading text-xl tracking-tight">Keep your CRM, your calendar, your phones</h3>
-      <p class="mt-2 text-sm text-muted-foreground leading-relaxed">HubSpot, Salesforce, Zendesk, Twilio, Make, n8n, custom webhooks. Plug into the stack you already run instead of replacing it. Every call lands where you already look.</p>
-    </div>
-    <div class="rounded-3xl bg-card shadow-card p-6 md:p-7">
-      <span class="grid h-9 w-9 place-items-center rounded-full bg-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
-      <h3 class="mt-5 font-heading text-xl tracking-tight">Enterprise-grade compliance</h3>
-      <p class="mt-2 text-sm text-muted-foreground leading-relaxed">HIPAA-eligible and SOC 2 Type II certified. BAAs are self-serve via click-agreements.retellai.com — no Enterprise plan required.</p>
-    </div>
+  <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <article class="flex flex-col">
+      <div class="relative aspect-square overflow-hidden rounded-3xl bg-card grid place-items-center">
+        <span class="absolute top-5 left-5 text-[10px] font-bold tracking-wider text-foreground bg-surface px-2 py-1 rounded-full uppercase">Retell only</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="text-foreground/80"><rect width="14" height="20" x="5" y="2" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+      </div>
+      <div class="pt-5">
+        <h3 class="font-heading text-xl tracking-tight">Press-to-confirm, built in</h3>
+        <p class="mt-2 text-sm text-muted-foreground leading-relaxed">Insurance ID, account number, appointment code. Callers can press numbers or just talk — one agent handles both. Most platforms in this category can't do it.</p>
+      </div>
+    </article>
+    <article class="flex flex-col">
+      <div class="relative aspect-square overflow-hidden rounded-3xl bg-card grid place-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="text-foreground/80"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </div>
+      <div class="pt-5">
+        <h3 class="font-heading text-xl tracking-tight">Keep your CRM, your calendar, your phones</h3>
+        <p class="mt-2 text-sm text-muted-foreground leading-relaxed">HubSpot, Salesforce, Zendesk, Twilio, Make, n8n, custom webhooks. Plug into the stack you already run instead of replacing it. Every call lands where you already look.</p>
+      </div>
+    </article>
+    <article class="flex flex-col">
+      <div class="relative aspect-square overflow-hidden rounded-3xl bg-card grid place-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="text-foreground/80"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="pt-5">
+        <h3 class="font-heading text-xl tracking-tight">Enterprise-grade compliance</h3>
+        <p class="mt-2 text-sm text-muted-foreground leading-relaxed">HIPAA-eligible and SOC 2 Type II certified. BAAs are self-serve via click-agreements.retellai.com — no Enterprise plan required.</p>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -295,73 +311,74 @@
 </section>
 
 <!-- FAQ -->
-<section id="faqs" class="max-w-3xl mx-auto px-4 md:px-6 pb-24 md:pb-32">
-  <h2 class="font-heading font-light tracking-[-0.02em] leading-[1.05] text-4xl md:text-5xl text-center">Frequently asked questions</h2>
-
-  <div class="mt-10">
-    <details class="border-b border-border-side group">
-      <summary class="flex items-center justify-between cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
+<section id="faqs" class="max-w-6xl mx-auto px-4 md:px-6 pb-24 md:pb-32">
+  <div class="faq-grid">
+    <h2 class="font-heading font-light tracking-[-0.02em] leading-[1.05] text-4xl md:text-5xl">Frequently asked questions</h2>
+    <div>
+    <details class="faq-row group">
+      <summary class="flex items-center justify-between gap-6 cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
         What's the actual time-to-first-call?
-        <svg class="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        <span class="faq-plus shrink-0 text-2xl leading-none text-muted-foreground transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
       </summary>
       <p class="pb-5 text-sm text-muted-foreground leading-relaxed">Five minutes for the basics: paste your URL, pick a voice, get a number. Most customers spend another 10–15 minutes refining tone and connecting Cal.com or their CRM before going live.</p>
     </details>
-    <details class="border-b border-border-side group">
-      <summary class="flex items-center justify-between cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
+    <details class="faq-row group">
+      <summary class="flex items-center justify-between gap-6 cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
         How natural does it actually sound?
-        <svg class="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        <span class="faq-plus shrink-0 text-2xl leading-none text-muted-foreground transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
       </summary>
       <p class="pb-5 text-sm text-muted-foreground leading-relaxed">Natural enough that callers stay on the line and book. HealthJoy chose Retell specifically on voice quality after testing alternatives. You can pick from thousands of voices across ElevenLabs, Cartesia, and Retell's own — including the ones already running millions of enterprise calls a month.</p>
     </details>
-    <details class="border-b border-border-side group">
-      <summary class="flex items-center justify-between cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
+    <details class="faq-row group">
+      <summary class="flex items-center justify-between gap-6 cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
         Do my callers know they're talking to AI?
-        <svg class="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        <span class="faq-plus shrink-0 text-2xl leading-none text-muted-foreground transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
       </summary>
       <p class="pb-5 text-sm text-muted-foreground leading-relaxed">That's up to you to configure. A growing number of jurisdictions now require disclosure (California's AB 2905, the EU AI Act, FCC proposed rules), and Retell makes it easy to add the right language to your agent's opening prompt. The voice quality is good enough that disclosure doesn't tank engagement — most customers prefer to be upfront for trust reasons anyway.</p>
     </details>
-    <details class="border-b border-border-side group">
-      <summary class="flex items-center justify-between cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
+    <details class="faq-row group">
+      <summary class="flex items-center justify-between gap-6 cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
         What happens when the AI can't handle a call?
-        <svg class="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        <span class="faq-plus shrink-0 text-2xl leading-none text-muted-foreground transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
       </summary>
       <p class="pb-5 text-sm text-muted-foreground leading-relaxed">It transfers — warm or cold — to whichever staff member you've configured. You'll also get a transcript and summary in your inbox or CRM.</p>
     </details>
-    <details class="border-b border-border-side group">
-      <summary class="flex items-center justify-between cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
+    <details class="faq-row group">
+      <summary class="flex items-center justify-between gap-6 cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
         Does it meet HIPAA, SOC 2, and AI disclosure rules?
-        <svg class="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        <span class="faq-plus shrink-0 text-2xl leading-none text-muted-foreground transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
       </summary>
       <p class="pb-5 text-sm text-muted-foreground leading-relaxed">Yes. Retell is HIPAA-eligible and SOC 2 Type II certified. BAAs are self-serve via click-agreements.retellai.com — no Enterprise plan required. For California's AB 2905 and the EU AI Act, you can add disclosure language to your agent's opening prompt; the platform doesn't lock you into one wording.</p>
     </details>
-    <details class="border-b border-border-side group">
-      <summary class="flex items-center justify-between cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
+    <details class="faq-row group">
+      <summary class="flex items-center justify-between gap-6 cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
         Can it use my existing phone number?
-        <svg class="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        <span class="faq-plus shrink-0 text-2xl leading-none text-muted-foreground transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
       </summary>
       <p class="pb-5 text-sm text-muted-foreground leading-relaxed">Port your number, forward your line, or use a fresh Retell-provisioned number. Whatever's least disruptive to your operation.</p>
     </details>
-    <details class="border-b border-border-side group">
-      <summary class="flex items-center justify-between cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
+    <details class="faq-row group">
+      <summary class="flex items-center justify-between gap-6 cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
         How is pricing structured?
-        <svg class="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        <span class="faq-plus shrink-0 text-2xl leading-none text-muted-foreground transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
       </summary>
       <p class="pb-5 text-sm text-muted-foreground leading-relaxed">Per-minute, pay-as-you-go. No per-seat fees, no setup fees, no annual contract. Start free with $10 in credit; see the pricing page for current rates.</p>
     </details>
-    <details class="border-b border-border-side group">
-      <summary class="flex items-center justify-between cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
+    <details class="faq-row group">
+      <summary class="flex items-center justify-between gap-6 cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
         What if I need something more custom?
-        <svg class="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        <span class="faq-plus shrink-0 text-2xl leading-none text-muted-foreground transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
       </summary>
       <p class="pb-5 text-sm text-muted-foreground leading-relaxed">Drop into the full Retell Agent Platform — same account, same number, same voice. Build custom flows, plug in your own LLM, integrate any system. No migration.</p>
     </details>
-    <details class="border-b border-border-side group">
-      <summary class="flex items-center justify-between cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
+    <details class="faq-row group">
+      <summary class="flex items-center justify-between gap-6 cursor-pointer list-none text-left text-base md:text-lg font-medium py-5">
         How is this different from ElevenAgents Reception or other AI receptionists?
-        <svg class="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        <span class="faq-plus shrink-0 text-2xl leading-none text-muted-foreground transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
       </summary>
       <p class="pb-5 text-sm text-muted-foreground leading-relaxed">Two things: the platform underneath, and the absence of lock-in. Retell Receptionist is built on infrastructure that already runs enterprise call centers — and you can swap the LLM, voice, or telephony provider any time without rebuilding.</p>
     </details>
+    </div>
   </div>
 </section>
 
